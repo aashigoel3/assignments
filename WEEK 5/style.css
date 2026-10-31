@@ -1,36 +1,49 @@
+:root {
+    --bgcolor: navajowhite;
+    --headingcolor: plum;
+    --navcolor: aliceblue;
+    --linkcolor: orangered;
+    --containercolor: rgb(67,99,4);
+    --paracolor: purple;
+
+    --smallspacings: 12px;
+    --mediumspacings: 16px;
+    --largespacings: 20px;
+}
+
 *{
     box-sizing: border-box;
 }
 
 body {
-    background-color:navajowhite;
+    background-color: var(--bgcolor);
     text-align: center;
 }
 
 h1 {
-    color: plum;
-    font-size: 20px;
+    color: var(--headingcolor);
+    font-size: var(--largespacings);
 }
 
 nav {
-    background-color: aliceblue;
-    padding: 12px;
+    background-color: var(--navcolor);
+    padding: var(--smallspacings);
     font-size: 15px;
     font-variant: small-caps;
 }
 
 a {
-    color: orangered;
+    color: var(--linkcolor);
     margin: 12px;
 }
 
 .container{
-    color:rgb(67, 99, 4);
-    font-size: 18px;
+    color: var(--containercolor);
+    font-size: var(--mediumspacings);
 }
 
 #para{ 
-    color:purple;
+    color: var(--paracolor);
     line-height: 1.3vh;
-    font-size: 16px;
+    font-size: var(--mediumspacings);
 }
