@@ -1,10 +1,14 @@
+*{
+    background-color: lightskyblue;
+}
+
 body {
-    background-color: beige;
+    background-color:navajowhite;
     text-align: center;
 }
 
 h1 {
-    color:crimson:
+    color: plum;
 }
 
 nav {
@@ -17,3 +21,10 @@ a {
     margin: 12px;
 }
 
+.container{
+    color:rgb(67, 99, 4);
+}
+
+#para{ 
+    color:purple;
+}
