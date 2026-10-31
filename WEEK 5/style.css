@@ -1,5 +1,5 @@
 *{
-    background-color: lightskyblue;
+    box-sizing: border-box;
 }
 
 body {
@@ -9,11 +9,14 @@ body {
 
 h1 {
     color: plum;
+    font-size: 20px;
 }
 
 nav {
     background-color: aliceblue;
     padding: 12px;
+    font-size: 15px;
+    font-variant: small-caps;
 }
 
 a {
@@ -23,8 +26,11 @@ a {
 
 .container{
     color:rgb(67, 99, 4);
+    font-size: 18px;
 }
 
 #para{ 
     color:purple;
+    line-height: 1.3vh;
+    font-size: 16px;
 }
