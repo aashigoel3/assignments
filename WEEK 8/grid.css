@@ -6,7 +6,7 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: thistle;
+    background-color: royalblue;
     padding: 1px;
 }
 
@@ -17,15 +17,32 @@ h1 {
 
 .gridcontainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 300px 80px;
+    grid-template-areas: "head head" "side main" "foot foot";
     gap: 8px;
+    padding: 10px;
 }
 
-.gridcard {
-    background-color: cyan;
-    border: 3px solid;
-    border-radius: 10px;
-    padding: 30px;
-    text-align: center;
-    font-size: 18px;
+.head {
+    grid-area: head;
+    background-color: rgb(99, 235, 113);
+    padding: 20px;
+}
+
+.side{
+    grid-area: side;
+    background-color:rgb(99, 235, 113);
+    padding: 20px; ;
+}
+
+.main{ 
+    grid-area: main;
+    background-color: rgb(99, 235, 113);
+    padding: 20px;
+}
+
+.foot {
+    grid-area: foot;
+    background-color: rgb(99, 235, 113);
 }
