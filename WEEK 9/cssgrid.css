@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    margin: 1px;
+    padding: 3px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: royalblue;
+    padding: 1px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 100px 300px 80px;
+    grid-template-areas: "head head" "side main" "foot foot";
+    gap: 8px;
+    padding: 10px;
+}
+
+header {
+    grid-area: head;
+    background-color: rgb(99, 235, 113);
+    padding: 20px;
+}
+
+aside{
+    grid-area: side;
+    background-color:rgb(99, 235, 113);
+    padding: 20px; ;
+}
+
+main{ 
+    grid-area: main;
+    background-color: rgb(99, 235, 113);
+    padding: 20px;
+}
+
+footer {
+    grid-area: foot;
+    background-color: rgb(99, 235, 113);
+}
+
+.head, .side, .main, .foot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (min-width: 768px){
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .gridcontainer{
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "head head"  "side main" "foot foot";
+    }
+
+    .main {
+        min-height: 250px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .gridcontainer {
+        grid-template-columns: 1fr 3fr;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .head, .side, .main, .foot {
+        padding: 30px;
+        font-size: 18px;
+    }
+}
