@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 1px;
+    padding: 3px;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: thistle;
+    padding: 1px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.gridcard {
+    background-color: cyan;
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 18px;
+}
