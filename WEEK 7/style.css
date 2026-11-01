@@ -37,3 +37,34 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.banner{
+    height: 200px;
+    background-color: honeydew;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.banner h1 {
+    color:darkslategray;
+    font-size: large;
+}
+
+.banner p {
+    font-size: medium;
+}
+
+.banner button {
+    padding: 10px 20px;
+    background-color: yellowgreen;
+    color: white;
+    font-size: medium;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
