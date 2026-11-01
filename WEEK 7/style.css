@@ -68,3 +68,27 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.cardcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1 1 200px;
+    background-color: azure;
+    border: 2px solid royalblue;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.card h2 {
+    color: royalblue;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: lightslategray;
+    line-height: small;
+}
