@@ -24,25 +24,31 @@ h1 {
     padding: 10px;
 }
 
-.head {
+header {
     grid-area: head;
     background-color: rgb(99, 235, 113);
     padding: 20px;
 }
 
-.side{
+aside{
     grid-area: side;
     background-color:rgb(99, 235, 113);
     padding: 20px; ;
 }
 
-.main{ 
+main{ 
     grid-area: main;
     background-color: rgb(99, 235, 113);
     padding: 20px;
 }
 
-.foot {
+footer {
     grid-area: foot;
     background-color: rgb(99, 235, 113);
+}
+
+.head, .side, .main, .foot {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
